@@ -13,6 +13,13 @@
     grid-row-gap: 1.5rem;
     justify-content: center;
 
+    @media screen and (max-width: $bp-medium) {
+        grid-column: full-start / full-end;
+    }
+    @media screen and (max-width: $bp-small) {
+        padding: 5rem;
+    }
+
     &__logo {
         height: 3rem;
         justify-self: center;
@@ -54,4 +61,5 @@
             filter: brightness(70%);
         }
     }
+
 }

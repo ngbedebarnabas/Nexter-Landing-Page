@@ -42,4 +42,8 @@
     width: 70%;
     border-top: 1px solid #fff;
     padding: 2rem;
+
+    @media screen and (max-width: $bp-small) {
+        width: 100%;
+    }
 }
