@@ -15,6 +15,10 @@ $color-gray-dark-2: #6D5D4B;
 $font-primary: 'Nunito', Sans-serif;
 $font-display: 'Josefin Sans', Sans-serif;
 
+// BREAK POINTS 
+$bp-largest: 75em; //1200 /16
+
+
 *,
 *::before,
 *::after {
@@ -26,6 +30,10 @@ $font-display: 'Josefin Sans', Sans-serif;
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 
+
+    @media screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
 }
 
 body {
